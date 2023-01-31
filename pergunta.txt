@@ -1,0 +1,18 @@
+Public Sub RealizarPergunta()
+
+     Dim resultado As VbMsgBoxResult
+
+     resultado = MsgBox("Insira a Pergunta aqui:", vbYesNo + vbQuestion, "Solicitação")
+
+If resultado = vbYes Then
+
+Range("A1").Value = "Vitor"
+
+
+Else
+
+Range("A1").Value = "Gustavo"
+
+End If
+
+End Sub
